@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background:url(./bg.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div.box{
+    height: 25rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top,#f8f8f831,#ffffff96);
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px #000;
+}
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #dbdbdb9f;
+    border-radius: 7px;
+    border: none;
+    display: inline-block;
+    margin: 3rem;
+    padding: 15px 0;
+    outline: none;
+    transition: box-shadow 0.3s, border 0.5s;
+    color: #2e2e2e;
+    font-size: 16px;
+}
+input:focus{
+    border: 1px solid #3333333d;
+    box-shadow: 1px 1px 10px rgba(0,0 ,0, 0.8);
+}
+
+button{
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 12px 0;
+    color: #f0f0f0;
+    background-color: #3131318e;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    animation: change 3s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+button:hover{
+    box-shadow: 1px 1px 10px rgba(0,0 ,0, 0.8);
+}
+
+
+@keyframes change {
+    from{
+        background-color: #3131318e;
+    }
+    to{
+        background-color: #8d8d8d70;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    main div.box{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:780px) {
+    main div.box{
+        width: 55%;
+    }
+}
+@media only screen and (max-width:650px) {
+    main div.box{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:450px) {
+    main div.box{
+        width: 80%;
+        height: 20rem;
+    }
+    input{
+        width: 70%;
+        font-size: 14px;
+    }
+    button{
+        padding: 15px 0;
+        width: 50%;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:280px) {
+    main div.box{
+        width: 90%;
+    }
+}
