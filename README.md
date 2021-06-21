@@ -1,2 +1,2 @@
 # captcha-creator
-a captcha creator for practice
+a responsive captcha creator for practice
